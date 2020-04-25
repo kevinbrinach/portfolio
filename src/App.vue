@@ -1,32 +1,38 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app >
+    <toolbar id="app" />
+    <v-content id="app">
+      <router-view class="grey--text" style="background-color: " />
+    </v-content>
+    <footer-portfolio/>
+  </v-app>
 </template>
 
+<script>
+import HelloWorld from "./components/HelloWorld";
+import Toolbar from "./components/Toolbar.vue";
+import FooterPortfolio from "./components/Footer";
+
+export default {
+  name: "App",
+
+  components: {
+    HelloWorld,
+    Toolbar,
+    FooterPortfolio
+  },
+
+  data: () => ({
+    //
+  })
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+.v-app {
+   font-family: League Spartan, sans-serif !important;
+    .title { // To pin point specific classes of some components
+       font-family: League Spartan, sans-serif !important;
     }
-  }
-}
+ }
 </style>
