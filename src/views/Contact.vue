@@ -2,7 +2,7 @@
   <div class="contact">
     <bg-image :text1="$t('banner.contact.main-text-contact')"/>
     <v-container>
-      <div class="text-center my-6 grey--text text--darken-3" :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline' ">You can contact me on:</div>
+      <div class="text-center my-6 grey--text text--darken-3" :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline' ">{{$t('contact')}}</div>
       <v-row justify="center">
         <v-col lg="4" class="" v-for="(contact, index) in contactInfo" :key="index">
           <v-list-item :dense="$vuetify.breakpoint.smAndDown">
