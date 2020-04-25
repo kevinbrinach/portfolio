@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row class="text-center">
+    <!-- <v-row class="text-center">
       <v-col cols="12">
         <v-img
           :src="require('../assets/logo.svg')"
@@ -12,7 +12,7 @@
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
+         {{$t ('message')}}
         </h1>
 
         <p class="subheading font-weight-regular">
@@ -87,7 +87,12 @@
           </a>
         </v-row>
       </v-col>
-    </v-row>
+    </v-row> -->
+    <div class="locale-changer">
+      <select v-model="$i18n.locale">
+        <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">{{ lang }}</option>
+      </select>
+    </div>
   </v-container>
 </template>
 
@@ -96,6 +101,7 @@
     name: 'HelloWorld',
 
     data: () => ({
+      langs: ['en', 'es'],
       ecosystem: [
         {
           text: 'vuetify-loader',

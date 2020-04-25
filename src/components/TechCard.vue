@@ -32,7 +32,7 @@
             </v-list-item>
 
             <v-card-actions style="justify-content:center">
-              <span class="d-inline-block" v-if="!$vuetify.breakpoint.smAndDown">Expertise:</span>
+              <span class="d-inline-block" v-if="!$vuetify.breakpoint.smAndDown">{{$t('technologies-content.tech-cards.expertise')}}:</span>
               <v-rating
                 v-model="tech.skill"
                 background-color="cyan lighten-3"

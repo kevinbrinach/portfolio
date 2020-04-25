@@ -4,12 +4,16 @@ import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
 import "typeface-league-spartan";
+import i18n from './i18n'
+import FlagIcon from 'vue-flag-icon';
 
+Vue.use(FlagIcon)
 Vue.config.productionTip = false;
 
 new Vue({
   router,
   store,
   vuetify,
-  render: (h) => h(App),
+  i18n,
+  render: (h) => h(App)
 }).$mount("#app");

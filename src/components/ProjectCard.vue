@@ -8,15 +8,15 @@
             </v-col>
         </v-row>
         <v-col cols="12" lg="12" class="text-left">
-            <v-col class="grey--text text--darken-3" lg="12" :class="$vuetify.breakpoint.smAndDown ? 'body-2' : 'body-1'">Project Name:</v-col>
+            <v-col class="grey--text text--darken-3" lg="12" :class="$vuetify.breakpoint.smAndDown ? 'body-2' : 'body-1'">{{$t('projects-content.name')}}</v-col>
             <v-col :class="$vuetify.breakpoint.smAndDown ? 'title pl-4' : 'ml-10 headline' " class="font-italic font-weight-bold  grey--text" lg="12">
                 {{project.name}}
             </v-col>
-            <v-col class="grey--text text--darken-3" lg="12" :class="$vuetify.breakpoint.smAndDown ? 'body-2' : 'body-1'">About the project:</v-col>
+            <v-col class="grey--text text--darken-3" lg="12" :class="$vuetify.breakpoint.smAndDown ? 'body-2' : 'body-1'">{{$t('projects-content.about')}}</v-col>
             <v-col class="text-justify" :class="$vuetify.breakpoint.smAndDown ? 'body-2 pl-5' : 'ml-10 body-1' " lg="12">
                 {{project.about}}
             </v-col>
-            <v-col class="grey--text text--darken-3" lg="12" :class="$vuetify.breakpoint.smAndDown ? 'body-2' : 'body-1'">Technologies used:</v-col>
+            <v-col class="grey--text text--darken-3" lg="12" :class="$vuetify.breakpoint.smAndDown ? 'body-2' : 'body-1'">{{$t('projects-content.tech')}}</v-col>
             <v-row :class="$vuetify.breakpoint.smAndDown ? 'px-8' : 'ml-10' " justify="start">
                 <v-col cols="3" lg="1" v-for="(image, index) in project.technologies" :key="index" >
                     <v-tooltip bottom>
@@ -28,7 +28,7 @@
                 </v-col>
             </v-row>
 
-            <v-col class="grey--text text--darken-3" lg="12" :class="$vuetify.breakpoint.smAndDown ? 'body-2' : 'body-1'">Site:</v-col>
+            <v-col class="grey--text text--darken-3" lg="12" :class="$vuetify.breakpoint.smAndDown ? 'body-2' : 'body-1'">{{$t('projects-content.site')}}</v-col>
             <v-col :class="$vuetify.breakpoint.smAndDown ? '' : 'ml-10' " lg="12">
                 <a class="link" :class="$vuetify.breakpoint.smAndDown ? 'body-2 pl-4' : 'body-1'" :href="project.site" target="_blank">{{project.site ? project.name : 'N/A'}}</a>
             </v-col>

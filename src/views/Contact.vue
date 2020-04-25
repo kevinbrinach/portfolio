@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <bg-image :text1="text1"/>
+    <bg-image :text1="$t('banner.contact.main-text-contact')"/>
     <v-container>
       <div class="text-center my-6 grey--text text--darken-3" :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline' ">You can contact me on:</div>
       <v-row justify="center">

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <bg-image :text1="text1"/>
+    <bg-image :text1="$t('banner.tech.main-text-tech')"/>
     <v-container justify="center">
-      <div class="text-center  my-6 grey--text text--darken-3" :class="$vuetify.breakpoint.smAndDown ? 'title text-justify' : 'headline' ">Listed below are the technologies I usually use and my expertise on them</div>
+      <div class="text-center  my-6 grey--text text--darken-3" :class="$vuetify.breakpoint.smAndDown ? 'title text-justify' : 'headline' ">{{$t('technologies-content.tech-header')}}</div>
       <v-row justify="center">
         <v-col cols="6" sm="4" lg="3" v-for="(tech, index) in technologies" :key="index" justify="center" class="">
           <tech-card :tech="tech"/>
@@ -29,131 +29,156 @@ export default {
           name: 'Vue.js',
           image: 'https://cdn.worldvectorlogo.com/logos/vue-9.svg',
           skill: 5,
-          description: 'I develop most of my work using Vue.js'
+          description: this.$t('technologies-content.tech-cards.tooltips.vue')
         },
         {
           name: 'React',
           image: 'https://cdn.worldvectorlogo.com/logos/react-2.svg',
           skill: 4,
-          description: 'I started making web apps in React'
+          description: this.$t('technologies-content.tech-cards.tooltips.react')
         },
         {
           name: 'HTML5',
           image: 'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg',
           skill: 5,
-          description: 'All my work relies on HTML5'
+          description: this.$t('technologies-content.tech-cards.tooltips.html5')
         },
         {
           name: 'JavaScript',
           image: 'https://cdn.worldvectorlogo.com/logos/javascript.svg',
           skill: 4,
-          description: 'JavaScript was one of the first languages I learned'
+          description: this.$t('technologies-content.tech-cards.tooltips.js')
         },
         {
           name: 'Vuetify',
           image: 'https://cdn.worldvectorlogo.com/logos/vuetify.svg',
           skill: 3,
-          description: 'I usually use Vuetify for its sweet Material Design components'
+          description: this.$t('technologies-content.tech-cards.tooltips.vuetify')
         },
         {
           name: 'Bootstrap',
           image: 'https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg',
           skill: 3,
-          description: 'Bootstrap is the first CSS framework that I used'
+          description: this.$t('technologies-content.tech-cards.tooltips.bootstrap')
         },
         {
           name: 'CSS3',
           image: 'https://cdn.worldvectorlogo.com/logos/css-5.svg',
           skill: 3,
-          description: "I don't rely only on CSS frameworks"
+          description: this.$t('technologies-content.tech-cards.tooltips.css')
         },
         {
           name: 'Quasar.js',
           image: 'https://cdn.quasar.dev/logo/svg/quasar-logo.svg',
           skill: 4,
-          description: 'Quasar makes my life so much easier'
+          description: this.$t('technologies-content.tech-cards.tooltips.quasar')
         },
         {
           name: 'Redux',
           image: 'https://cdn.worldvectorlogo.com/logos/redux.svg',
           skill: 3,
-          description: "I use Redux for its single state"
+          description: this.$t('technologies-content.tech-cards.tooltips.redux')
         },
         {
           name: 'Vuex',
           image: 'https://user-images.githubusercontent.com/7110136/29002857-9e802f08-7ab4-11e7-9c31-604b5d0d0c19.png',
           skill: 4,
-          description: 'I use Vuex for its single state'
+          description: this.$t('technologies-content.tech-cards.tooltips.vuex')
         },
         {
           name: 'Firebase',
           image: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg',
           skill: 3,
-          description: "I've used Firebase and Firestore in some projects"
+          description: this.$t('technologies-content.tech-cards.tooltips.firebase')
         },
         {
           name: 'Docker',
           image: 'https://cdn.worldvectorlogo.com/logos/docker.svg',
           skill: 2,
-          description: "I'm in the process of getting used to Docker"
+          description: this.$t('technologies-content.tech-cards.tooltips.docker')
         },
         {
           name: 'Node JS',
           image: 'https://cdn.worldvectorlogo.com/logos/nodejs.svg',
           skill: 2,
-          description: "I developed a REST API using Node JS along Express JS"
+          description: this.$t('technologies-content.tech-cards.tooltips.node')
         },
         {
           name: 'MongoDB',
           image: 'https://cdn.worldvectorlogo.com/logos/mongodb.svg',
           skill: 3,
-          description: 'At college my peers and I used MongoDB to manage NoSQL databases'
+          description: this.$t('technologies-content.tech-cards.tooltips.mongo')
         },
         {
           name: 'GitHub',
           image: 'https://cdn.worldvectorlogo.com/logos/github-1.svg',
           skill: 4,
-          description: "I have my public repositories in GitHub"
+          description: this.$t('technologies-content.tech-cards.tooltips.github')
         },
         
         {
           name: 'GitLab',
           image: 'https://cdn.worldvectorlogo.com/logos/gitlab.svg',
           skill: 4,
-          description: "My private repositories are here"
+          description: this.$t('technologies-content.tech-cards.tooltips.gitlab')
         },
         
         {
           name: 'BitBucket',
           image: 'https://cdn.worldvectorlogo.com/logos/bitbucket-icon.svg',
           skill: 4,
-          description: "My private repositories are here"
+          description: this.$t('technologies-content.tech-cards.tooltips.bitbucket')
         },
         {
           name: 'Trello',
           image: 'https://cdn.worldvectorlogo.com/logos/trello.svg',
           skill: 5,
-          description: 'I arrange my tasks in a project using Trello'
+          description: this.$t('technologies-content.tech-cards.tooltips.trello')
         },
         {
           name: 'Jira',
           image: 'https://cdn.worldvectorlogo.com/logos/jira-3.svg',
           skill: 5,
-          description: 'I arrange my tasks in a project using Jira'
+          description: this.$t('technologies-content.tech-cards.tooltips.jira')
         },
         {
           name: 'MySQL',
           image: 'https://cdn.worldvectorlogo.com/logos/mysql.svg',
           skill: 3,
-          description: 'Management of relational databases at collegue'
+          description: this.$t('technologies-content.tech-cards.tooltips.sql')
         },
         {
           name: 'Laravel PHP',
           image: 'https://cdn.worldvectorlogo.com/logos/laravel-2.svg',
           skill: 2,
-          description: 'In the process of learning'
+          description: this.$t('technologies-content.tech-cards.tooltips.laravel')
         },
       ]
+    }
+  },
+  watch: {
+    '$i18n.locale'() {
+      this.technologies[0].description = this.$t('technologies-content.tech-cards.tooltips.vue')
+      this.technologies[1].description = this.$t('technologies-content.tech-cards.tooltips.react')
+      this.technologies[2].description = this.$t('technologies-content.tech-cards.tooltips.html5')
+      this.technologies[3].description = this.$t('technologies-content.tech-cards.tooltips.js')
+      this.technologies[4].description = this.$t('technologies-content.tech-cards.tooltips.vuetify')
+      this.technologies[5].description = this.$t('technologies-content.tech-cards.tooltips.bootstrap')
+      this.technologies[6].description = this.$t('technologies-content.tech-cards.tooltips.css')
+      this.technologies[7].description = this.$t('technologies-content.tech-cards.tooltips.quasar')
+      this.technologies[8].description = this.$t('technologies-content.tech-cards.tooltips.redux')
+      this.technologies[9].description = this.$t('technologies-content.tech-cards.tooltips.vuex')
+      this.technologies[10].description = this.$t('technologies-content.tech-cards.tooltips.firebase')
+      this.technologies[11].description = this.$t('technologies-content.tech-cards.tooltips.docker')
+      this.technologies[12].description = this.$t('technologies-content.tech-cards.tooltips.node')
+      this.technologies[13].description = this.$t('technologies-content.tech-cards.tooltips.mongo')
+      this.technologies[14].description = this.$t('technologies-content.tech-cards.tooltips.github')
+      this.technologies[15].description = this.$t('technologies-content.tech-cards.tooltips.gitlab')
+      this.technologies[16].description = this.$t('technologies-content.tech-cards.tooltips.bitbucket')
+      this.technologies[17].description = this.$t('technologies-content.tech-cards.tooltips.trello')
+      this.technologies[18].description = this.$t('technologies-content.tech-cards.tooltips.jira')
+      this.technologies[19].description = this.$t('technologies-content.tech-cards.tooltips.sql')
+      this.technologies[20].description = this.$t('technologies-content.tech-cards.tooltips.laravel')
     }
   },
 }

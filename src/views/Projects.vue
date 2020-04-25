@@ -1,8 +1,8 @@
 <template>
   <div class="projects">
-    <bg-image :text1="text1"/>
+    <bg-image :text1="$t('banner.projects.main-text-projects')"/>
     <v-container lg="12">
-        <div class="text-center mt-6 grey--text text--darken-3" :class="$vuetify.breakpoint.smAndDown ? 'title text-justify' : 'headline'">These are some of the projects that I worked on:</div>
+        <div class="text-center mt-6 grey--text text--darken-3" :class="$vuetify.breakpoint.smAndDown ? 'title text-justify' : 'headline'">{{$t('projects-content.header')}}</div>
         <!-- <div class="text-left caption mt-1 ">Bear in mind some of these are propietary software so its repositories won't be available</div> -->
         <v-row class="mt-5 pt-5">
             <v-col lg="12" v-for="project in projects" :key="project.id" class="grey--text">
@@ -31,7 +31,7 @@ export default {
                 {
                     id: 6,
                     name: 'YouPoach',
-                    about: 'Front-end for hiring platform for professionals and freelancers.',
+                    about: this.$t('projects-content.description.youpoach'),
                     images: [
                         {
                             id: 1,
@@ -66,7 +66,7 @@ export default {
                 {
                     id: 5,
                     name: 'Outilmaco',
-                    about: 'Front-end for for fleet management system and remote monitoring for cargo trucks.',
+                    about: this.$t('projects-content.description.outilmaco'),
                     images: [
                         {
                             id: 1,
@@ -97,7 +97,7 @@ export default {
                 {
                     id: 1,
                     name: 'AMano',
-                    about: 'Front-end for a company that provides products, designs and architectural services plus integration with their API.',
+                    about: this.$t('projects-content.description.amano'),
                     images: [
                         {
                             id: 1,
@@ -128,7 +128,7 @@ export default {
                 {
                     id: 2,
                     name: 'CloudProp',
-                    about: 'Support for a proptech startup: rental management automation.',
+                    about: this.$t('projects-content.description.cloudprop'),
                     images: [
                         {
                             id: 1,
@@ -155,7 +155,7 @@ export default {
                 {
                     id: 3,
                     name: 'Cobrawi',
-                    about: 'Support for massive payments notification platform.',
+                    about: this.$t('projects-content.description.cobrawi'),
                     images: [
                         {
                             id: 1,
@@ -182,7 +182,7 @@ export default {
                 {
                     id: 4,
                     name: 'Colegio de Kinesiologos del Chaco',
-                    about: 'Front and backend for integral management and billing system of a professional asociation. I was part of the front end team.',
+                    about: this.$t('projects-content.description.colekine'),
                     images: [
                         {
                             id: 1,
@@ -217,5 +217,15 @@ export default {
             ],
         }
     },
+    watch: {
+        '$i18n.locale'() {
+            this.projects[0].about = this.$t('projects-content.description.youpoach')
+            this.projects[1].about = this.$t('projects-content.description.outilmaco')
+            this.projects[2].about = this.$t('projects-content.description.amano')
+            this.projects[3].about = this.$t('projects-content.description.cloudprop')
+            this.projects[4].about = this.$t('projects-content.description.cobrawi')
+            this.projects[5].about = this.$t('projects-content.description.colekine')
+        }
     }
+}
 </script>

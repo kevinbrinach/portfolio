@@ -1,0 +1,75 @@
+{
+  "message": "hello i18n español!!",
+  "toolbar": {
+    "home": "Inicio",
+    "tech": "Tecnologías",
+    "projects": "Projectos",
+    "contact": "Info de Contacto"
+  },
+  "banner": {
+    "home" : {
+      "main-text-home":"Bienvenido a mi página",
+      "secondary-text-home":"Hago aplicaciones web"
+    },
+    "tech" : {
+      "main-text-tech": "Tecnologías con las que trabajo"
+    },
+    "projects" : {
+      "main-text-projects": "Proyectos en los que trabajé"
+    },
+    "contact" : {
+      "main-text-contact": "Como contactarme"
+    }
+  },
+  "home-content": {
+    "about": "Quien soy",
+    "content-1": "Me llamo Kevin Brinach, tengo 27 años. En los últimos 3 años he estado trabajando como WebDev freelancer, mayormente en la parte de front-end, desarrollando sitios con frameworks basados en JavaScript como React.JS y Vue.JS. Y por supuesto, también uso CSS3, HTML5 y otras tecnologías que puedes ver en dicha sección." ,
+    "content-2": "Mis hobbies van desde los deportes a los videojuegos y series. Cuando no estoy programando siempre estoy haciendo otras cosas. El aburrimiento no existe para mi.",
+    "content-3": "Tengo mucha pasión por la programación y por aprender sobre el tema. Generalmente no paro de programar hasta que el trabajo está terminado.",
+    "content-4": "Si tenés un proyecto en el que creas que puedo ser de ayuda, no dudes en contactarme."
+  },
+  "technologies-content": {
+    "tech-header": "Abajo están listadas las tecnologías que generalmente uso y mi experiencia en ellas",
+    "tech-cards": {
+      "expertise": "Experiencia",
+      "tooltips": {
+        "vue": "La mayor parte de mi trabajo es desarrollado con Vue.js",
+        "react": "Comencé a hacer web apps con React",
+        "html5": "Todo mi trabajo se basa en html",
+        "js": "JavaScript fue uno de los primeros lenguajes que aprendí",
+        "vuetify": "Uso Vuetify por sus componentes basados en Material Design",
+        "bootstrap": "Bootstrap fue el primer framework CSS que usé",
+        "css": "No me baso solo en frameworks CSS",
+        "quasar": "Quasar hace mi vida mucho más fácil",
+        "redux": "Uso Redux por su single state",
+        "vuex": "Uso Vuex por su single state",
+        "firebase": "He usado Firebase junto con Firestore en algunos proyectos",
+        "docker": "Estoy en el proceso de adaptarme a Docker",
+        "node": "Desarrollé una REST API usando Node.js junto con Express.js",
+        "mongo": "En la facultad junto a mis compañeros administramos bases de datos NoSQL con MongoDB",
+        "github": "Tengo mis repositorios públicos en GitHub",
+        "gitlab": "Mis repositorios privados estan acá",
+        "bitbucket": "Mis repositorios privados estan acá",
+        "trello": "Organizo las tareas de los proyectos usando Trello",
+        "jira": "Organizo las tareas de los proyectos usando Jira",
+        "sql": "Administración de bases de datos relacionales en la facultad",
+        "laravel": "En proceso de aprendizaje"
+      }
+    }
+  },
+  "projects-content": {
+    "header": "Estos son algunos de los proyectos en los que trabajé:",
+    "name": "Nombre del proyecto:",
+    "about": "Sobre el proyecto:",
+    "tech": "Tecnologías usadas:",
+    "site": "Página:",
+    "description": {
+      "youpoach": "Front-end para una plataforma de contratación de profesionales y freelancers.",
+      "outilmaco": "Front-end para un sistema de gestión de flotas y monitoreo remoto de camiones de carga.",
+      "amano": "Front-end para una compañia que provee productos, diseños y servicios arquitectónicos mas integración a su API.",
+      "cloudprop": "Soporte para una startup del sector inmobiliario: automatización del manejo de alquileres.",
+      "cobrawi": "Soporte para una plataforma de cobros masiva.",
+      "colekine": "Front y back-end para administración y facturación integral de una Asociación de Profesionales."
+    }
+  }
+}
