@@ -4,11 +4,21 @@
     <v-container lg="12">
       <div
         class="text-center mt-6 grey--text text--darken-3"
-        :class="$vuetify.breakpoint.smAndDown ? 'title text-justify' : 'headline'"
-      >{{$t('projects-content.header')}}</div>
+        :class="
+          $vuetify.breakpoint.smAndDown ? 'title text-justify' : 'headline'
+        "
+      >
+        {{ $t("projects-content.header") }}
+      </div>
       <!-- <div class="text-left caption mt-1 ">Bear in mind some of these are propietary software so its repositories won't be available</div> -->
       <v-row class="mt-5 pt-5">
-        <v-col lg="12" v-for="project in projects" :key="project.id" class="grey--text">
+        <v-col
+          cols="12"
+          lg="12"
+          v-for="project in projects"
+          :key="project.id"
+          class="grey--text"
+        >
           <project-card :project="project" />
           <v-divider light class="mb-6"></v-divider>
         </v-col>
