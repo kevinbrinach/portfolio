@@ -10,7 +10,6 @@
       >
         {{ $t("projects-content.header") }}
       </div>
-      <!-- <div class="text-left caption mt-1 ">Bear in mind some of these are propietary software so its repositories won't be available</div> -->
       <v-row class="mt-5 pt-5">
         <v-col
           cols="12"
@@ -204,6 +203,38 @@ export default {
           site: "http://www.cloudprop.com.ar/",
         },
         {
+          id: 8,
+          name: "Planoo",
+          about: this.$t("projects-content.description.planoo"),
+          images: [
+            {
+              id: 1,
+              image: "https://i.imgur.com/vC2K0Gu.png",
+            },
+            {
+              id: 2,
+              image: "https://i.imgur.com/M2wUeQ5.png",
+            },
+            {
+              id: 3,
+              image: "https://i.imgur.com/M629S6D.jpg",
+            },
+          ],
+          technologies: [
+            {
+              name: "React",
+              img: "https://cdn.worldvectorlogo.com/logos/react.svg",
+            },
+            {
+              name: ".NET Core",
+              img:
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png",
+            },
+          ],
+          repository: null,
+          site: "https://dev-ui-planoo.azurewebsites.net/",
+        },
+        {
           id: 3,
           name: "Cobrawi",
           about: this.$t("projects-content.description.cobrawi"),
@@ -263,42 +294,6 @@ export default {
               name: "JQuery",
               img: "https://cdn.worldvectorlogo.com/logos/jquery-1.svg",
             },
-          ],
-          repository: null,
-          site: null,
-        },
-        {
-          id: 8,
-          name: "Planoo",
-          about: this.$t("projects-content.description.planoo"),
-          images: [
-            // {
-            //   id: 1,
-            //   image: null,
-            // },
-            // {
-            //   id: 2,
-            //   image: null,
-            // },
-            // {
-            //   id: 3,
-            //   image: null,
-            // },
-          ],
-          technologies: [
-            // {
-            //   name: "Asp.NET MVC5",
-            //   img:
-            //     "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1ga1dywGmcQlQ-VSeK3GoFwQL7aAZgHj2wqM5dcbOdYCKO9T9&usqp=CAU",
-            // },
-            // {
-            //   name: "Bootstrap",
-            //   img: "https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg",
-            // },
-            // {
-            //   name: "JQuery",
-            //   img: "https://cdn.worldvectorlogo.com/logos/jquery-1.svg",
-            // },
           ],
           repository: null,
           site: null,

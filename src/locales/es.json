@@ -71,7 +71,7 @@
       "cobrawi": "Soporte para una plataforma de cobros masiva.",
       "colekine": "Front y back-end para administración y facturación integral de una Asociación de Profesionales.",
       "freelo": "Frontend para una compañía que tiene como objetivo automatizar, para el usuario, las declaraciones de impuestos en Argentina.",
-      "planoo": "Frontend para una startup australiana que apunta a hacer el mercado de bienes raíces mas simple para aquellos buscando un nuevo hogar. Aún está en una etapa temprana de desarrollo"
+      "planoo": "Frontend para una startup australiana que apunta a hacer el mercado de bienes raíces mas simple para aquellos buscando un nuevo hogar. Inlcuyó conexión al backend propio de la app, desarrollado en .NET Core, asi como también a varias APIs de Google Maps"
     }
   },
   "contact": "Podes contactarme en:"

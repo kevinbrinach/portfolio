@@ -71,7 +71,7 @@
       "cobrawi": "Support for massive payments notification platform.",
       "colekine": "Front and backend for integral management and billing system of a professional asociation.",
       "freelo": "Frontend for a company which has as a goal the automatization of the tax returns in Argentina.",
-      "planoo": "Frontend for an Australian startup which aims to make the real state market in Canberra simpler for the ones looking for a new place to live in. In the early stages of development."
+      "planoo": "Frontend for an Australian startup which aims to make the real state market in Canberra simpler for the ones looking for a new place to live in. This included an integration to the app's backend developed in .NET Core and to several Google Maps API."
     }
   },
   "contact": "You can contact me on:"

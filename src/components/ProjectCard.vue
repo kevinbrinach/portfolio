@@ -48,7 +48,7 @@
       <v-col
         class="text-justify"
         :class="$vuetify.breakpoint.smAndDown ? 'body-2 pl-5' : 'ml-10 body-1'"
-        lg="12"
+        lg="11"
       >
         {{ project.about }}
       </v-col>
