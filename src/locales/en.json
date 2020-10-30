@@ -7,23 +7,23 @@
     "contact": "Contact Info"
   },
   "banner": {
-    "home" : {
-      "main-text-home":"Welcome to my page",
-      "secondary-text-home":"I make web apps"
+    "home": {
+      "main-text-home": "Welcome to my page",
+      "secondary-text-home": "I make web apps"
     },
-    "tech" : {
+    "tech": {
       "main-text-tech": "Technologies I work with"
     },
-    "projects" : {
+    "projects": {
       "main-text-projects": "Projects I worked on"
     },
-    "contact" : {
+    "contact": {
       "main-text-contact": "How to Contact me"
     }
   },
   "home-content": {
     "about": "About me",
-    "content-1": "My name is Kevin Brinach I'm 27 years old. Over the past three years I've been working as a freelance web developer -frontend mostly- building websites with frameworks based on JavaScript, like React.JS and Vue.JS. And of course I also use CSS, HTML5 and other technologies that you can see in the aforementioned section." ,
+    "content-1": "My name is Kevin Brinach I'm 27 years old. Over the past three years I've been working as a freelance web developer -frontend mostly- building websites with frameworks based on JavaScript, like React.JS and Vue.JS. And of course I also use CSS, HTML5 and other technologies that you can see in the aforementioned section.",
     "content-2": "My hobbies range from sports to videogames and series. When I'm not programming I'm always doing something. Boredom doesn't exist for me.",
     "content-3": "I'm very passionate about programming and learning about said subject and I usually don't stop programming 'till the job is done.",
     "content-4": "If you have a project I can help with, please get in touch."
@@ -69,7 +69,9 @@
       "amano": "Front-end for a company that provides products, designs and architectural services plus integration with their API.",
       "cloudprop": "Support for a proptech startup: rental management automation.",
       "cobrawi": "Support for massive payments notification platform.",
-      "colekine": "Front and backend for integral management and billing system of a professional asociation."
+      "colekine": "Front and backend for integral management and billing system of a professional asociation.",
+      "freelo": "Frontend for a company which has as a goal the automatization of the tax returns in Argentina.",
+      "planoo": "Frontend for an Australian startup which aims to make the real state market in Canberra simpler for the ones looking for a new place to live in. In the early stages of development."
     }
   },
   "contact": "You can contact me on:"
